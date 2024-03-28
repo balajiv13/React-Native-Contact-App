@@ -1,0 +1,9 @@
+export const CONTACT_LISTS= 'Contacts',
+    CREATE_CONTACT= 'Create  Contact',
+    CONTACT_DETAILS= 'Contacts Details',
+    EDIT_CONTACT= 'edit-contact',
+    SETTINGS= 'Settings',
+    LOGIN= 'Login',
+    REGISTER= 'register',
+    HOME_NAVIGATOR= 'Home-Na',
+    ABOUT_US = 'About Us'
