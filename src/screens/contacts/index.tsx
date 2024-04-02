@@ -1,12 +1,13 @@
 import React from "react";
 import { Text, View } from "react-native";
+import Container from "../../components/common/Container";
 
 
 const Contacts = () =>{
     return(
-        <View>
+        <Container style={{marginTop: 10, marginLeft: 30}}>
             <Text>Contacts Page</Text>
-        </View>
+        </Container>
     )
 }
 

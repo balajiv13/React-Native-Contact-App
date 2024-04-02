@@ -1,17 +1,8 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
 import AppNavContainer from './src/navigations';
+import GlobalProvider from './src/context/Provider';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -19,7 +10,9 @@ type SectionProps = PropsWithChildren<{
 const App = () => {
 
   return (
-    <AppNavContainer></AppNavContainer>
+    <GlobalProvider>
+      <AppNavContainer></AppNavContainer>
+    </GlobalProvider>
   );
 };
 
